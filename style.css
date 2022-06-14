@@ -1,0 +1,93 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+@font-face {
+            font-family: Lexend Deca ;
+            src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+@font-face {
+    font-family: Big Shoulders Display ;
+    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    font-size: 15px;
+    padding: 25px;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 25px;
+}
+.heading{
+    font-family: Big Shoulders Display ;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-top: 48px;
+}
+p{
+    font-family: Lexend Deca ;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan button{
+    color: hsl(31, 77%, 52%) ;
+    text-align: center;
+}
+.sedan button :hover{
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color:hsl(31, 77%, 52%) ;
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%) ;
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+.grid-3-col{
+    padding: 50px;
+    padding-top: 70px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 600px);
+    justify-content: center;
+    width: 85%;
+    overflow: hidden;
+}
+
+span{
+    text-transform: uppercase;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px; 
+    border-radius: 40%;   
+    text-align: center;
+    margin-top: 70px;
+}
+@media screen and (min-width: 375) {
+    .grid-3-col{
+        /* padding: 50px; */
+        display: block;
+        width: 100%;
+        height: 100vh;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
